@@ -14,8 +14,6 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-        with:
-          path: wiki
       - name: Fork Sync
         uses: tgymnich/fork-sync@v1.2.1
         with:
@@ -54,6 +52,7 @@ jobs:
       - name: Generate docs
         run: |
           cd ..
+          cp mindustrywiki wiki
           git clone https://github.com/Anuken/Mindustry --depth 1
           git clone https://github.com/Anuken/Mindustry-Wiki-Generator --depth 1
           cd Mindustry-Wiki-Generator/
@@ -64,4 +63,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          publish_dir: ../wiki/site
