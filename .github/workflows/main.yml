@@ -18,6 +18,7 @@ jobs:
         uses: tgymnich/fork-sync@v1.2.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          owner: mindustrygame
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
