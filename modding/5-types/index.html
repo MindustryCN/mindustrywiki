@@ -4348,6 +4348,133 @@
 </tr>
 </tbody>
 </table>
+<h2 id="fracker">Fracker</h2>
+<p><em>extends <a href="#solidpump">SolidPump</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>itemUseTime</td>
+<td>float</td>
+<td>100.0</td>
+<td></td>
+</tr>
+<tr>
+<td>liquidRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>rotatorRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="genericsmelter">GenericSmelter</h2>
+<p><em>extends <a href="#genericcrafter">GenericCrafter</a></em></p>
+<p>A GenericCrafter with a new glowing region drawn on top.</p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flameColor</td>
+<td>Color</td>
+<td>ffc999ff</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="itembridge">ItemBridge</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerTransport</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>range</td>
+<td>int</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>transportTime</td>
+<td>float</td>
+<td>2.0</td>
+<td></td>
+</tr>
+<tr>
+<td>endRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>bridgeRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>arrowRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>lastBuild</td>
+<td>ItemBridgeBuild</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>lastPlan</td>
+<td>BuildPlan</td>
+<td>null</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="legacyblock">LegacyBlock</h2>
 <p><em>extends <a href="#block">Block</a></em></p>
 <p>Any subclass of this will be removed upon world load.</p>
@@ -4417,8 +4544,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="fracker">Fracker</h2>
-<p><em>extends <a href="#solidpump">SolidPump</a></em></p>
+<h2 id="reloadturret">ReloadTurret</h2>
+<p><em>extends <a href="#baseturret">BaseTurret</a></em></p>
 <table>
 <thead>
 <tr>
@@ -4430,89 +4557,9 @@
 </thead>
 <tbody>
 <tr>
-<td>itemUseTime</td>
+<td>reloadTime</td>
 <td>float</td>
-<td>100.0</td>
-<td></td>
-</tr>
-<tr>
-<td>liquidRegion</td>
-<td>TextureRegion</td>
-<td>null</td>
-<td></td>
-</tr>
-<tr>
-<td>rotatorRegion</td>
-<td>TextureRegion</td>
-<td>null</td>
-<td></td>
-</tr>
-<tr>
-<td>topRegion</td>
-<td>TextureRegion</td>
-<td>null</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="itembridge">ItemBridge</h2>
-<p><em>extends <a href="#block">Block</a></em></p>
-<table>
-<thead>
-<tr>
-<th>field</th>
-<th>type</th>
-<th>default</th>
-<th>notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>timerTransport</td>
-<td>int</td>
-<td>1</td>
-<td></td>
-</tr>
-<tr>
-<td>range</td>
-<td>int</td>
-<td>0</td>
-<td></td>
-</tr>
-<tr>
-<td>transportTime</td>
-<td>float</td>
-<td>2.0</td>
-<td></td>
-</tr>
-<tr>
-<td>endRegion</td>
-<td>TextureRegion</td>
-<td>null</td>
-<td></td>
-</tr>
-<tr>
-<td>bridgeRegion</td>
-<td>TextureRegion</td>
-<td>null</td>
-<td></td>
-</tr>
-<tr>
-<td>arrowRegion</td>
-<td>TextureRegion</td>
-<td>null</td>
-<td></td>
-</tr>
-<tr>
-<td>lastBuild</td>
-<td>ItemBridgeBuild</td>
-<td>null</td>
-<td></td>
-</tr>
-<tr>
-<td>lastPlan</td>
-<td>BuildPlan</td>
-<td>null</td>
+<td>10.0</td>
 <td></td>
 </tr>
 </tbody>
@@ -4705,6 +4752,8 @@
 </tr>
 </tbody>
 </table>
+<h2 id="powerdistributor">PowerDistributor</h2>
+<p><em>extends <a href="#powerblock">PowerBlock</a></em></p>
 <h2 id="nuclearreactor">NuclearReactor</h2>
 <p><em>extends <a href="#powergenerator">PowerGenerator</a></em></p>
 <table>
@@ -4803,86 +4852,6 @@
 </tr>
 </tbody>
 </table>
-<h2 id="overdriveprojector">OverdriveProjector</h2>
-<p><em>extends <a href="#block">Block</a></em></p>
-<table>
-<thead>
-<tr>
-<th>field</th>
-<th>type</th>
-<th>default</th>
-<th>notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>timerUse</td>
-<td>int</td>
-<td>1</td>
-<td></td>
-</tr>
-<tr>
-<td>topRegion</td>
-<td>TextureRegion</td>
-<td>null</td>
-<td></td>
-</tr>
-<tr>
-<td>reload</td>
-<td>float</td>
-<td>60.0</td>
-<td></td>
-</tr>
-<tr>
-<td>range</td>
-<td>float</td>
-<td>80.0</td>
-<td></td>
-</tr>
-<tr>
-<td>speedBoost</td>
-<td>float</td>
-<td>1.5</td>
-<td></td>
-</tr>
-<tr>
-<td>speedBoostPhase</td>
-<td>float</td>
-<td>0.75</td>
-<td></td>
-</tr>
-<tr>
-<td>useTime</td>
-<td>float</td>
-<td>400.0</td>
-<td></td>
-</tr>
-<tr>
-<td>phaseRangeBoost</td>
-<td>float</td>
-<td>20.0</td>
-<td></td>
-</tr>
-<tr>
-<td>hasBoost</td>
-<td>boolean</td>
-<td>true</td>
-<td></td>
-</tr>
-<tr>
-<td>baseColor</td>
-<td>Color</td>
-<td>feb380ff</td>
-<td></td>
-</tr>
-<tr>
-<td>phaseColor</td>
-<td>Color</td>
-<td>ffd59eff</td>
-<td></td>
-</tr>
-</tbody>
-</table>
 <h2 id="payloadrouter">PayloadRouter</h2>
 <p><em>extends <a href="#payloadconveyor">PayloadConveyor</a></em></p>
 <table>
@@ -4903,8 +4872,6 @@
 </tr>
 </tbody>
 </table>
-<h2 id="powerdistributor">PowerDistributor</h2>
-<p><em>extends <a href="#powerblock">PowerBlock</a></em></p>
 <h2 id="powernode">PowerNode</h2>
 <p><em>extends <a href="#powerblock">PowerBlock</a></em></p>
 <table>
@@ -4951,26 +4918,6 @@
 <td>laserColor2</td>
 <td>Color</td>
 <td>fbd367ff</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="reloadturret">ReloadTurret</h2>
-<p><em>extends <a href="#baseturret">BaseTurret</a></em></p>
-<table>
-<thead>
-<tr>
-<th>field</th>
-<th>type</th>
-<th>default</th>
-<th>notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>reloadTime</td>
-<td>float</td>
-<td>10.0</td>
 <td></td>
 </tr>
 </tbody>
@@ -5023,6 +4970,8 @@
 </tr>
 </tbody>
 </table>
+<h2 id="statictree">StaticTree</h2>
+<p><em>extends <a href="#staticwall">StaticWall</a></em></p>
 <h2 id="storageblock">StorageBlock</h2>
 <p><em>extends <a href="#block">Block</a></em></p>
 <h2 id="coreblock">CoreBlock</h2>
@@ -5359,33 +5308,6 @@
 <td>drawer</td>
 <td>DrawBlock</td>
 <td>new DrawBlock()</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="genericsmelter">GenericSmelter</h2>
-<p><em>extends <a href="#genericcrafter">GenericCrafter</a></em></p>
-<p>A GenericCrafter with a new glowing region drawn on top.</p>
-<table>
-<thead>
-<tr>
-<th>field</th>
-<th>type</th>
-<th>default</th>
-<th>notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>flameColor</td>
-<td>Color</td>
-<td>ffc999ff</td>
-<td></td>
-</tr>
-<tr>
-<td>topRegion</td>
-<td>TextureRegion</td>
-<td>null</td>
 <td></td>
 </tr>
 </tbody>
@@ -5884,6 +5806,86 @@ Liquids will take priority over items.</p>
 <h2 id="oreblock">OreBlock</h2>
 <p><em>extends <a href="#overlayfloor">OverlayFloor</a></em></p>
 <p>An overlay ore for a specific item type.</p>
+<h2 id="overdriveprojector">OverdriveProjector</h2>
+<p><em>extends <a href="#block">Block</a></em></p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>type</th>
+<th>default</th>
+<th>notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timerUse</td>
+<td>int</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>topRegion</td>
+<td>TextureRegion</td>
+<td>null</td>
+<td></td>
+</tr>
+<tr>
+<td>reload</td>
+<td>float</td>
+<td>60.0</td>
+<td></td>
+</tr>
+<tr>
+<td>range</td>
+<td>float</td>
+<td>80.0</td>
+<td></td>
+</tr>
+<tr>
+<td>speedBoost</td>
+<td>float</td>
+<td>1.5</td>
+<td></td>
+</tr>
+<tr>
+<td>speedBoostPhase</td>
+<td>float</td>
+<td>0.75</td>
+<td></td>
+</tr>
+<tr>
+<td>useTime</td>
+<td>float</td>
+<td>400.0</td>
+<td></td>
+</tr>
+<tr>
+<td>phaseRangeBoost</td>
+<td>float</td>
+<td>20.0</td>
+<td></td>
+</tr>
+<tr>
+<td>hasBoost</td>
+<td>boolean</td>
+<td>true</td>
+<td></td>
+</tr>
+<tr>
+<td>baseColor</td>
+<td>Color</td>
+<td>feb380ff</td>
+<td></td>
+</tr>
+<tr>
+<td>phaseColor</td>
+<td>Color</td>
+<td>ffd59eff</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="payloadacceptor">PayloadAcceptor</h2>
 <p><em>extends <a href="#block">Block</a></em></p>
 <table>
@@ -6586,8 +6588,6 @@ Liquids will take priority over items.</p>
 </tr>
 </tbody>
 </table>
-<h2 id="statictree">StaticTree</h2>
-<p><em>extends <a href="#staticwall">StaticWall</a></em></p>
 <h2 id="switchblock">SwitchBlock</h2>
 <p><em>extends <a href="#block">Block</a></em></p>
 <table>
@@ -7120,7 +7120,7 @@ Liquids will take priority over items.</p>
 <tr>
 <td>id</td>
 <td>int</td>
-<td>173</td>
+<td>170</td>
 <td></td>
 </tr>
 <tr>
