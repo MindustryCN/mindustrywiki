@@ -4734,13 +4734,13 @@
 <tr>
 <td>explosionRadius</td>
 <td>int</td>
-<td>50</td>
+<td>23</td>
 <td></td>
 </tr>
 <tr>
 <td>explosionDamage</td>
 <td>int</td>
-<td>2000</td>
+<td>1900</td>
 <td></td>
 </tr>
 <tr>
@@ -5585,24 +5585,30 @@ Liquids will take priority over items.</p>
 <td>itemDuration</td>
 <td>float</td>
 <td>120.0</td>
-<td></td>
+<td>ticks to consume 1 fuel</td>
 </tr>
 <tr>
 <td>heating</td>
 <td>float</td>
 <td>0.01</td>
-<td></td>
+<td>heating per frame * fullness</td>
 </tr>
 <tr>
 <td>smokeThreshold</td>
 <td>float</td>
 <td>0.3</td>
-<td></td>
+<td>threshold at which block starts smoking</td>
+</tr>
+<tr>
+<td>flashThreshold</td>
+<td>float</td>
+<td>0.46</td>
+<td>heat threshold at which lights start flashing</td>
 </tr>
 <tr>
 <td>explosionRadius</td>
 <td>int</td>
-<td>20</td>
+<td>19</td>
 <td></td>
 </tr>
 <tr>
@@ -5612,16 +5618,10 @@ Liquids will take priority over items.</p>
 <td></td>
 </tr>
 <tr>
-<td>flashThreshold</td>
-<td>float</td>
-<td>0.46</td>
-<td></td>
-</tr>
-<tr>
 <td>coolantPower</td>
 <td>float</td>
 <td>0.5</td>
-<td></td>
+<td>heat removed per unit of coolant</td>
 </tr>
 <tr>
 <td>topRegion</td>
@@ -7154,7 +7154,7 @@ Liquids will take priority over items.</p>
 <tr>
 <td>id</td>
 <td>int</td>
-<td>175</td>
+<td>174</td>
 <td></td>
 </tr>
 <tr>
