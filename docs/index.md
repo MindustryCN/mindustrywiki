@@ -3,7 +3,7 @@
 ## 最新版本: [$latestRelease]($latestReleaseLink)
 
 ## 附加
-这是一个汉化的wiki！原wiki地址 [原wiki](https://mindustrygame.github.io/wiki/)  
+这是一个汉化的wiki！原wiki地址 [https://mindustrygame.github.io/wiki/](https://mindustrygame.github.io/wiki/)  
 本wiki托管在 [GitHub](https://github.com/MindustryCN/mindustrywiki). 如果你要编辑点什么, 只要点击上面的edit按钮, 你将会重定向到 *pull request* 表格, 你可以在那里更改并提交批准。  
 请注意大多数条目都是自动生成的，如果有一些问题请去 [WikiGen repository](https://github.com/MindustryCN/wiki-generator) 来发出问题请求.
 
