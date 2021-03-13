@@ -1,6 +1,6 @@
 site_name: Mindustry Wiki
 site_url: https://wiki.mindustry.cyou/
-repo_url: https://github.com/MindustryGame/wiki
+repo_url: https://github.com/MindustryCN/mindustrywiki
 docs_dir: 'docs_out'
 theme: 
   name: material
