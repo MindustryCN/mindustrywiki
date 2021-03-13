@@ -1,20 +1,20 @@
-# Frequently Asked Questions
+# 常问问题
 
-## How do I play multiplayer with my friends/enemies?
+## 如何跟我的队友或者敌人一起联机？
 
-If you're on the same wifi or hotspot network, it should be easy. Start playing a game, open the pause menu and press "Host Multiplayer Game" button. This will make your game available to everyone in the same network. To join this game from another device, click Play > Join Game. If another player is hosting, the game should pop up in the list of servers.
+如果你们在相同wifi或者热点的情况下，就很容易联机。如果你是加入者，打开加入游戏，就可以看见同网络环境下的房间。如果你是房主，点开自定义游戏，点击要玩的地图，暂停开开启服务器就可。
 
-## I can't find my friend's multiplayer game!
+## 我不能发现我朋友的房间！
 
-If you are sure that you are on the same network, and you still can't find their game, considering using a wifi hotspot instead of a public network. Some public wifi networks simply do not allow server discovery.
+如果你和你的朋友确认是否在同一个网络环境，如果答案为是并且还是连不上，请考虑改用热点连接，因为有些公共wifi可能会ban掉连接。
 
-If you're using a wifi hotspot and you still can't find a friend's game, you could try connecting directly via IP. Instead of looking for the game, find the internal IP of the hosting device (look up how to find it for the specific device you're using), and have the other player type in that IP in the Play > Join Game > Add Server button.
+如果你们已经用热点链接了却还是连不上，请尝试直接ip连接，查到房主手机/电脑的ip（方法自己百度）再从加入游戏栏点击添加服务器输入ip。
 
-## How can I play with someone across networks?
+## 如何和不在一个wifi的好友一起玩？
 
-You need to port forward and share your IP with the other players. See the guide [here.](https://mindustrygame.github.io/wiki/servers/)
+你需要自行端口映射到外网并将你的ip地址告诉其他玩家。 看看说明书 [here.](https://mindustrycn.github.io/mindustrywiki/servers/)
 
-Consider using a public server, such as those that are on the game already.
+或者直接一起链接到一个公共服务器。
 
 ## How do I set up a dedicated server? / How do I port forward?
 
