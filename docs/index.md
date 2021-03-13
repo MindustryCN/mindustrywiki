@@ -8,15 +8,15 @@
 请注意大多数条目都是自动生成的，如果有一些问题请去 [WikiGen repository](https://github.com/MindustryCN/wiki-generator) 来发出问题请求.
 
 
-## Links
+## 链接
 
-- _[Source Code](https://github.com/Anuken/Mindustry)_  
-- _[Trello Board](https://trello.com/b/aE2tcUwF/mindustry-trello)_  
-- _[Discord Chatroom](https://discord.gg/mindustry)_ 
-- _[Releases & Patch Notes](https://github.com/Anuken/Mindustry/releases)_  
-- _[Javadoc](https://mindustrygame.github.io/docs/)_ 
+- _[游戏源代码](https://github.com/Anuken/Mindustry)_  
+- _[官方Trello](https://trello.com/b/aE2tcUwF/mindustry-trello)_  
+- _[官方Discord](https://discord.gg/mindustry)_ 
+- _[官方版本更新以及简要介绍](https://github.com/Anuken/Mindustry/releases)_  
+- _[Java文档](https://mindustrygame.github.io/docs/)_ 
 
-## Downloads
+## 下载
 
 <style>
 
