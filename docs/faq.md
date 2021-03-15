@@ -24,12 +24,13 @@
 
 是的，Mindustry是完全跨平台的。只要所有设备都运行同一版本，任何设备都可以连接到任何其他设备。
 
-## How do I import a map?
+## 如何导入地图？
 
-First of all, you need to make sure that the map is compatible with your game version. If you're running Mindustry 4.0 or later, you need a .msav map file.
-Once you download the file onto your device, open the Mindustry main menu. Select Editor -> Import Map (on the top of the screen). Find the directory that the map is in, select the file and press "open".  
+首先，您需要确保地图与您的游戏版本兼容。如果运行的是Mindustry 4.0或更高版本，则需要一个.msav地图文件。
 
-Note that the file chooser will only display files with an .msav extension. If you can't find the file, make sure that you're looking in the right place and that the extension is correct. Note that Discord may sometimes remove the extension from files when downloading, so you'll need to open your file browser of choice and add the extension manually.
+将文件下载到设备上后，打开Mindustry主菜单。选择编辑器->导入地图（在屏幕顶部）。找到地图所在的目录，选择文件并按“打开”。
+
+请注意，文件选择器将仅显示扩展名为.msav的文件。如果找不到文件，请确保查找的位置正确，并且扩展名正确。
 
 ## How do I export a map file?
 
