@@ -16,13 +16,13 @@
 
 或者直接一起链接到一个公共服务器。
 
-## How do I set up a dedicated server? / How do I port forward?
+## 如何设置专用服务器？ / 如何开服？
 
-See [this guide.](https://mindustrygame.github.io/wiki/servers/)
+看看 [教程](https://wiki.mindustry.cyou/servers/)
 
-## Can PC players play with iOS/Android players?
+## 电脑玩家能和IOS和安卓玩家一起玩吗？
 
-Yes, Mindustry is fully cross-platform. As long as all the devices are running the same version of Mindustry, any device can connect to any other device.
+是的，Mindustry是完全跨平台的。只要所有设备都运行同一版本，任何设备都可以连接到任何其他设备。
 
 ## How do I import a map?
 
