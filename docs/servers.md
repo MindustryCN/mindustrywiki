@@ -1,12 +1,11 @@
-# Servers
+# 服务器
 
-Servers are a large part of Mindustry in that they offer the ability to play the game with other people. There are two main types of servers; dedicated servers and local LAN servers. 
+服务器是Mindustry的重要组成部分，因为它们提供了与其他人一起玩游戏的能力。服务器主要有两种类型：专用服务器和本地局域网服务器。
 
-## Dedicated Servers
+## 专用服务器
+专用服务器是独立的，无界面的软件，只专注于提供一种手段，让人们玩多人游戏。它们通常作为一个独立的程序在计算机上运行，而不是在游戏中运行，并从终端进行操作。它们通常比本地局域网服务器更强大，因为它们有更多的可用资源来支持两个或以上的玩家，并且可以全天候运行。它们也更通用和强大，因为它们有许多命令来为管理员提供更多的控制，并且它们可以很容易地进行修改以满足管理员的需要。
 
-Dedicated servers are standalone, headless versions of the game that are focused only on providing a means for people to play Multiplayer. They are usually run on a computer as a separate program rather than in-game, and are operated from the terminal. These are usually stronger than a local LAN server as they have more resources available to them to support more than two or three players, and can be run 24/7. They are also more versatile and powerful in that they have many commands to provide the administrator with more control over it, and they can easily be modded to fit the administrator's needs. 
-
-You can connect to one using the "Join Game" button under the "Play" menu. Unlike local LAN servers, you will have to enter the host's IP address and port. Also unlike local LAN servers, once you add a server, it will automatically show up on your server list when you open it, and the game will automatically check the server's status.
+您可以使用“播放”菜单下的“加入游戏”按钮连接到服务器。与本地局域网服务器不同，您必须输入主机的IP地址和端口。与本地局域网服务器不同的是，一旦你添加了一个服务器，当你打开它时，它会自动出现在你的服务器列表上，游戏会自动检查服务器的状态。
 
 To establish a dedicated server, a dedicated Linux or Windows machine is **highly** recommended.
 
