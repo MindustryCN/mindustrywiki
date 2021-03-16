@@ -80,26 +80,26 @@ PC/Android APK: [https://anuke.itch.io/mindustry-classic](https://anuke.itch.io/
 
 他们完全是同一个人。当取“Anuke”时，Anuke（n）使用“Anuken”。
 
-> 当注册东西时Anuke被当作用户名时，我通常使用Anuken。-anuke(n)
+> 当注册东西时Anuke被当作用户名时，我通常使用Anuken。————anuke(n)
 
-## Why are you charging for the game on Steam and iOS when it is available for free?
+## 为什么Steam端和ios端是收费的？
 
-The game is being charged for on Steam and iOS because it is one way of supporting Anuke, and it has features not available on the free versions, such as:
+这款游戏在Steam和iOS上收费，因为它是支持Anuke的一种方式，而且它有免费版本无法提供的功能，例如：
 
-- A map, mod, and schematic browser
-- Secure, seamless multiplayer using Steam Multiplayer (eliminates the need to port-forward)
-- Publicly visible servers at startup
-- Achievements
-- Stat tracking
-- Cloud saves and progress transfer using Steam
-- Steam community
+- Steam创意工坊
+- Steam的安全无漏洞的多人游戏（无需内网映射）
+- 启动时公开可见的服务器
+- 50+成就
+- 持续统计
+- 使用Steam实现云存储和进度传输
+- Steam社区
 
-On the App Store, distributing the game there costs a lot, as a developer will need a Mac, and a $100/year developer license to do so. Such expenses are covered by charging for the game on there.
+在App Store上，在那里发布游戏要花很多钱，因为开发者需要一台Mac电脑，并且需要100美元/年的开发者许可证。这些费用由赚来的的游戏费支付。
 
-## How can I contribute to the game? 
+## 如何给游戏做贡献？
 
-- The easiest way is to give constructive feedback and discussion (preferably about the game) in our Discord Server.
-- Report bugs that you find on the GitHub repository. **Please remember to use the templates properly**, as doing so will make your issue more organized and follow a common pattern, making Anuke's job easier. If you know how to program in Java, feel free to help Anuke out and fix said bugs, then open a PR. 
-- Donations to Anuke are open on the Itch.io page if you would like to give a monetary contribution. You can also buy the game on Steam.
-- If you are fluent in a language that Mindustry doesn't support yet, or if you want to contribute to the ones already there, stop by the #translations channel, and ask about it. You can contribute to the current bundles and open a PR in the game's repo.
-- If you want to contribute to this wiki, please contact Anuke or Luxray5474. They'll let you know what you should do and how we roll.
+- 最简单的方法是在Discord服务器中提供建设性的反馈和讨论（最好是关于游戏的）。
+- 报告在GitHub存储库中发现的bug。**请记住正确使用模板**，这样做会使你的问题更有条理，并遵循一个共同的模式，使Anuke的工作更容易。如果你知道如何用Java编程，请随时帮助Anuke排除并修复所说的bug，然后打开一个PR。
+- 如果你想捐款去itch.io捐赠anuke，也可以在Steam上买游戏
+- 如果你能流利地使用Mindustry尚不支持的语言，或者如果你想对已经存在的语言有所贡献，请访问“翻译”频道，询问相关情况。你可以贡献给当前的捆绑包和在游戏回购中打开PR（此句原句翻译者看的云里雾里，请酌情观看）
+- 如果你想为原wiki做贡献，请联系Anuke或Luxray5474。他们会让你知道你该怎么做以及我们该怎么做。
