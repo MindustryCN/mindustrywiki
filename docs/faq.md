@@ -42,7 +42,7 @@
 
 PC/Android APK: [https://anuke.itch.io/mindustry-classic](https://anuke.itch.io/mindustry-classic)
 
-You can also find it by searching "mindustry classic" on the Google Play store.  
+你也可以在谷歌商店搜索到 
 
 104版本：可以去各大网址下载，如安卓可以去f-droid去下。  
 
@@ -62,25 +62,25 @@ You can also find it by searching "mindustry classic" on the Google Play store.
 
 有些人还通过在GitHub上提交pull请求来贡献游戏代码。这些人在discord中扮演着贡献者的角色。也有许多人对wiki/文档做出贡献。
 
-## How do I join the Google Play beta program?
+## 我如何加入谷歌商店测试计划？
 
-Open the Google Play page for Mindustry, scroll to the bottom of the page and tap 'join beta'. Beta builds can take some time to become available after tapping the button. Be patient. I do not control how fast this happens; it is handled automatically by Google.
+打开Mindustry的Google Play页面，滚动至页面底部，然后点击“加入测试”。点击按钮后，Beta版本可能需要一段时间才可用。耐心点。我无法控制这种情况发生的速度；它是由Google自动处理的。
 
-## I can't connect to servers / My game is out of date. What do I do?
+## 我无法连接到服务器/版本过时。我该怎么办？  
 
-If you're using Google Play on Android, wait for an update to become available. Builds are usually updated before the announcement is made, but Google may take hours to process it. Be patient.  
+如果你在Android上使用google play，请等待更新。版本通常在发布前更新，但谷歌可能需要数小时来处理。耐心点。 
 
-If you're on iOS, it's the same deal, except you may need to wait a bit longer. iOS builds take a longer time to release, and Apple takes 1-2 days to verify each release even after they are uploaded.
+如果你使用的是iOS，这是相同的，只是你可能需要再等一段时间。iOS版本的发布需要更长的时间，而苹果需要1-2天的时间来验证每个版本，即使是在上传之后。
 
-If you're using the desktop version, just go on itch.io using the links at the top of this channel and download the game again.  
+如果你用电脑版，直接打开itch或者steam获取最新内容。   
 
-*Updating should not reset progress.*
+*更新不会重置存档*
 
-## Are Anuke and Anuken different people?
+## Anuke和Anuken是不同的两个人吗？
 
-They are very well the same person. Anuke(n) uses "Anuken" when "Anuke" is taken.
+他们完全是同一个人。当取“Anuke”时，Anuke（n）使用“Anuken”。
 
-> I usually use Anuken when Anuke is taken as a username. -Anuken
+> 当注册东西时Anuke被当作用户名时，我通常使用Anuken。-anuke(n)
 
 ## Why are you charging for the game on Steam and iOS when it is available for free?
 
