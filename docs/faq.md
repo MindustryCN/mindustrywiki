@@ -32,32 +32,35 @@
 
 请注意，文件选择器将仅显示扩展名为.msav的文件。如果找不到文件，请确保查找的位置正确，并且扩展名正确。
 
-## How do I export a map file?
+## 如何导出地图？
 
-Open your map in the editor. Open the menu, then press "Export". Select a directory, type in a filename and press "Save".
+在编辑器打开你的地图。 开启菜单, 点击导出地图。 选一个存储位置、取个名字，点保存。  
 
-## I don't like the current version of Mindustry for some reason, what do I do?
+## 我不喜欢Mindustry的当前版本，因为某些原因，我该怎么办？
 
-Just download Mindustry Classic for the old experience. It's identical to build 3.5 40, albeit with some minor bugfixes.
+早期版本：itch搜索Mindustry Classic就可以了  
 
 PC/Android APK: [https://anuke.itch.io/mindustry-classic](https://anuke.itch.io/mindustry-classic)
 
-You can also find it by searching "mindustry classic" on the Google Play store.
+You can also find it by searching "mindustry classic" on the Google Play store.  
 
-## Does Mindustry run on a Raspberry Pi?
+104版本：可以去各大网址下载，如安卓可以去f-droid去下。  
 
-While the game itself could theoretically support it, no, it does not support the Raspberry Pi.
+## Mindustry是用树莓派做的吗？
 
-However, the dedicated server will run on a Pi as long as you have the right version of Java installed. Note that the 3.5/Classic dedicated server will not run on a Pi; only 4.0 and above is supported.
+虽然游戏本身在理论上可以支持它，但不，它不支持树莓派。  
 
-## Where is the game's source code?
+但是，只要安装了正确的Java版本，专用服务器就会在树莓派上运行。请注意，3.5/Classic专用服务器不会在树莓派上运行；只支持4.0及更高版本。  
 
-On GitHub: [https://github.com/Anuken/Mindustry](https://github.com/Anuken/Mindustry)
+## 游戏源代码在哪里？  
 
-## Did Anuke make the game alone?
+在Github官方开源: [https://github.com/Anuken/Mindustry](https://github.com/Anuken/Mindustry)
 
-For the most part, yes. Music, graphics and programming are done by me. Translations are made by contributors from the community.
-Some people also contribute to the game's code by submitting pull requests on GitHub. These people are marked with a Contributor role on Discord. There are many people who contribute to the wiki/documentation as well.
+## 是anuke一个人做的这个游戏吗？
+
+大多数情况下，是的。音乐，图形和编程都是我做的。翻译由社区的贡献者完成。
+
+有些人还通过在GitHub上提交pull请求来贡献游戏代码。这些人在discord中扮演着贡献者的角色。也有许多人对wiki/文档做出贡献。
 
 ## How do I join the Google Play beta program?
 
