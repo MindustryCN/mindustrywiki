@@ -7,44 +7,40 @@
 
 您可以使用“播放”菜单下的“加入游戏”按钮连接到服务器。与本地局域网服务器不同，您必须输入主机的IP地址和端口。与本地局域网服务器不同的是，一旦你添加了一个服务器，当你打开它时，它会自动出现在你的服务器列表上，游戏会自动检查服务器的状态。
 
-To establish a dedicated server, a dedicated Linux or Windows machine is **highly** recommended.
+要建立专用服务器，强烈建议使用专用Linux或Windows计算机。
 
-1. If you haven't already, install at least JRE and JDK 8.
-2. Download the desired server release from [itch.io](https://anuke.itch.io/mindustry), or compile one yourself. 
-3. Open a terminal or TTY session then change `cd` to the directory the JAR is placed in.
-4. Run `java -jar server.jar` using Command Prompt (on Windows) or your favorite terminal (on Linux and Mac). The commands are explained in the `help` command.
-5. Start hosting a map with `host <mapname> [mode]` after you configured your server.
-6. If you are using Windows to run your server, use your favorite search engine to look up how to add rules to your Windows Firewall, as it blocks that port most of the time. Make sure to allow **port 6567 TCP and UDP**.
+1.如果尚未安装，请至少安装JRE和JDK 8。
+2. 从官网下载一个服务器包 [itch.io](https://anuke.itch.io/mindustry), 或者自己编译一个。 
+3. 打开终端或PUTTY会话再按 `cd` 转到JAR所在的目录。
+4. 输入 `java -jar server.jar` 使用命令提示符（在Windows上）或您喜爱的终端（在Linux和Mac）。这些命令在命令中进行了说明 `help` 指令。（如果不行，百度查询服务器java安装）
+5. `host <mapname> [mode]` 配置服务器后，开始使用服务器。
+6. 如果您使用Windows来运行服务器，请使用您最喜欢的搜索引擎来查找如何向Windows防火墙添加规则，因为它在大多数情况下会阻止该端口。确保允许 **端口 6567 TCP 和 UDP**.
 
-Unless you have already enabled port forwarding, your dedicated server can only be connected to by clients within your local network. If you want to make your server globally available, read below.
+除非您已启用端口转发，否则专用服务器只能由本地网络中的客户端连接。如果要使服务器全局可用，请阅读以下内容。
 
-### What is an IP and how do I find out what mine is?
+### 什么是IP，我如何找出我的IP？
 
-In simplified terms, an IP address is a number that identifies your computer on the internet. You can connect to someone's Mindustry server if you know their IP address. There are two types; a **public** and a **local** address.
+简而言之，IP地址是一个数字，用于在Internet上标识您的计算机。如果您知道某人的IP地址，则可以连接到该人的Mindustry服务器。有两种类型。一个 **公共** 和一个 **本地** 地址。
 
-- For a **local IP**, when for example you would like to play with a friend on the same network as yours, each device has its own way of showing it. You can Google how to do it for your device, e.g. "find local ip on Mac".
-- For a **public IP**, you can simply Google "what is my ip".
+- 对于 **本地 IP**, ，例如，当您想与一个朋友在同一个网络上玩耍时，每种设备都有自己的显示方式。您可以在Google上针对自己的设备执行操作，例如“在Mac上查找本地ip”。
+- 对于 **公共 IP**, 你可以在百度上搜"ip"
 
-### Running A Dedicated Server At Home
+### 在家运行专用服务器
 
-Most of the time, this is what you should remember; **never share your public IP with the public if you're hosting from your home, unless you acknowledge the implications of doing so!** Your public IP is tied to your household, and if it falls into the wrong hands, and when put into the wrong hands, can open up your network to vulnerabilities and dangers. **Exercise caution, do your research, and use a VPN or webhost if possible.**
+大多数时候，这是您应该记住的； **如果您在家中托管，请不要与公众共享您的公共IP，除非您承认这样做的含义！** 您的公共IP与您的家庭息息相关，如果它落入不当之手，则会使您的网络更容易遭受漏洞和危险的威胁，不要乱动。 **谨慎行事，进行研究，并在可能的情况下使用VPN或网络主机。**
 
-It is also recommended and that you use a domain name or DNS service to mask your IP for public servers for ease of use, or even better, use a cloud service e.g. Amazon AWS or a dedicated server/VM from a hosting provider such as Linode or DigitalOcean, which is much safer. **Do your research**, and determine which option best fits your needs.
+I还建议您使用域名或DNS服务来掩盖公共服务器的IP，以便于使用，甚至更好，请使用云服务（例如Amazon AWS）或来自托管提供商（例如Linode）的专用服务器/ VM或DigitalOcean，它更安全。**在这方面多研究一下**, 并确定最适合您的需求的选项。
 
-1. Find the make/model of your router. This is usually on a sticker on the bottom or back of the router.
-2. Use your favorite search engine to search "port forward ASUS RT-ACRH17" and use the guide to foward **port 6567 TCP and UDP**. These instructions are different for every router, so be sure to read your guide thoroughly!
-3. You can use a service such as [You Get Signal](https://www.yougetsignal.com/tools/open-ports/) to check if you have done your portforwarding correctly. 
+## 本地局域网和Steam服务器  
 
-## Local LAN & Steam Servers
+本地局域网或Steam服务器是游戏内置的服务器，可以使用游戏菜单中的“开启服务器”按钮启动。它意味着简单，直接，可用于局域网（也称为家庭的WiFi网络）下的几个设备之间的会话。它并不是真正面向多个玩家的，因为您需要越来越多的设备资源才能以这种方式使用它。为此，您将需要上面提到的专用服务器。它只能在游戏打开时运行，并在游戏关闭时立即终止。  
 
-A local LAN or Steam server is a server that is built into the game, and can be started using the "Host Multiplayer Game" button in the in-game menu. It is meant to be simple and straightforward, for sessions between a few players under a LAN network (aka in your household's WiFi network). It is not really meant for several players, as it takes more and more resources from your device to be able to use it that way; for that you will need a dedicated server mentioned above. It can only run when the game is open, and is immediately terminated when it is closed.
+您可以使用“开始游戏”菜单下的“加入游戏”按钮连接到一个游戏。与专用服务器不同，您的设备会自动找到主机设备，并且通常会出现在服务器列表中，而无需您输入主机的IP地址。
 
-You can connect to one using the "Join Game" button under the "Play" menu. Unlike dedicated servers, your device will automatically find the host device and it will ususally appear in the server list without you having to enter the host's IP address in.
-
-## Dedicated Server Commands
+## 专用服务器命令
 
 $serverCommands
 
-## Dedicated Server Configuration Options
+## 专用服务器配置选项
 
 $serverConfigs
