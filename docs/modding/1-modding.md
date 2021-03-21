@@ -1,17 +1,19 @@
 
-# Modding Introduction
+# mod制作介绍  
 
-Mindustry mods are simply directories of assets. There are many ways to use the modding API, depending on exactly what you want to do, and how far you're willing to go to do it.
+Mindustry的mod只是像文件目录。有很多方法可以使用moddingapi，具体取决于您想要做什么，以及您愿意做多少。  
 
-You could just resprite existing game content, you can create new game content with the simpler Json API (which is the main focus of this documentation), you can add custom sounds (or reuse existing ones). It's possible to add maps to campaign mode, and add scripts to program special behavior into your mod, like custom effects. 
+您可以重新编写现有的游戏内容，您可以使用更简单的json的api创建新的游戏内容（这是本文档的重点），您可以添加自定义声音（或重用现有声音）。它可以添加地图更改模式，并添加脚本程序特殊行为到您的模式，如自定义效果。
 
-Sharing your mod is as simple as giving someone your project directory; mods are also cross platfrom to any platform that supports them. You'll want to use [GitHub](#github) (*or a similar service*) for hosting your source code.
-To make mods all you really need is any computer with a text editor.
+开始mod的制作只需要一份文件目录; mod也可以跨平台连接到支持它们的任何平台。您需要使用[GitHub]（#GitHub）（*或类似的服务*）来托管源代码。  
+
+制作mod只需要电脑上的文本编辑器就行。
 
 
-## Directory Structure
+## 目录结构  
 
-Your project directory should look something like this:
+你的文件目录应该像这个：
+
 
     project
     ├── mod.hjson
@@ -28,32 +30,32 @@ Your project directory should look something like this:
     ├── sprites-override
     └── sprites
 
--   `mod.hjson` (required) metadata file for your mod,
--   `content/*` directories for game [Content](#content),
--   `maps/` directory for in-game maps,
--   `bundles/` directory for [Bundles](#bundles),
--   `sounds/` directory for [Sound](#sound) files,
--   `schematics/` directory for [Schematic](#schematic) files,
--   `scripts/` directory for [Scripts](#scripts),
--   `sprites-override/` [Sprites](#sprites) directory for overriding ingame content,
--   `sprites/` [Sprites](#sprites) directory for your content,
+-   `mod.hjson` （必需）您的mod的数据文件，
+-   `content/*` 游戏内容目录 [Content](#content),
+-   `maps/` 目录中的地图
+-   `bundles/` 关于 [Bundles](#bundles)的目录,
+-   `sounds/` 关于 [Sound](#sound) 的目录,
+-   `schematics/` 关于 [Schematic](#schematic) 的目录,
+-   `scripts/` 关于 [Scripts](#scripts) 的目录,
+-   `sprites-override/` [Sprites](#sprites) 覆盖游戏原版贴图中的目录,
+-   `sprites/` [Sprites](#sprites) mod内容贴图目录,
 
-Every platform has a different user application data directory, and this is where your mods should be placed:
+每个平台都有不同的用户应用程序数据目录，这是您的mod应该放置的位置：  
 
 -   Linux: `~/.local/share/Mindustry/mods/`
 -   Steam: `steam/steamapps/common/Mindustry/mods/`
 -   Windows: `%appdata%/Mindustry/mods/`
 -   MacOS: `~/Library/Application Support/Mindustry/mods/`
 
-*Note that your filenames should be lowercased and hyphen separated:*
+*请注意，您的文件名应使用小写和连字符分隔：*
 
--   correct: `my-custom-block.json`
--   incorrect: `My Custom Block.json`
+-   正确： `小恶魔的_方_块_.json`
+-   错误： `小恶魔的 方 块 .json`
 
 
 ## Hjson
 
-Mindustry uses [Hjson](https://hjson.org/), which for anyone who knows Json, is simply a superset of the very popular serialization language known as [Json](https://en.wikipedia.org/wiki/JSON). &#x2013; This means that any valid Json will work, but you get extra useful stuff:
+Mindustry用 [Hjson](https://hjson.org/), 对于任何了解Json的人来说，它是非常流行的序列化语言 [Json](https://en.wikipedia.org/wiki/JSON). &#x2013; 这意味着任何有效的Json都可以工作，但您会得到额外的有用信息：
 
     # single line comment
     
@@ -77,29 +79,29 @@ Mindustry uses [Hjson](https://hjson.org/), which for anyone who knows Json, is 
     key4: { key1: string
             key2: 0 }
 
-If you don't know any of those words. &#x2013; A serialization language, is simply a language which encodes information for a program, and *encode* means to translate informantion from one form to another, and in this case, to translate text into Java data structures.
+如果你不知道这些语言。 &#x2013; 这种语言只是一种为程序编码信息的语言， *encode* 表示将信息从一种形式转换为另一种形式，在这种情况下，还表示将文本转换为Java数据结构。
 
 
 
 ## `mod.hjson`
 
-At the root of your project directory, you must have a `mod.json` which defines the basic metadata for your project. This file can also be (optionally) named `mod.hjson` to potentially help your text editor pick better syntax highlighting.
+在项目目录的根目录下，必须有 `mod.json` 它定义了项目的基本数据。 此文件也可以（可选）命名为 `mod.hjson` 以帮助您的文本编辑器选择更好的语法高亮显示。
 
-    name: "mod-name"
-    displayName: "This isn't a mod."
-    author: Yourself
-    description: "Bbfashbjhcbabfhsbafbhajbf"
+    name: "模组内置名字"
+    displayName: "模组外置名字"
+    author: 你自己
+    description: "描述"
     version: "1.0"
-    minGameVersion: "$latestRelease"
+    minGameVersion: "最低兼容版本"
     dependencies: [ ]
     hidden: false
 
--   `name` will be used to reference to your mod, so name it carefully;
--   `displayName` this will be used as a display name for the UI, which you can use to add formatting to said name;
--   `description` of the mod will be rendered in the ingame mod manager, so keep it short and to the point;
--   `dependencies` is optional, if you want to know more about that, go to the [dependencies](#dependencies) section;
--   `minGameVersion` is the minimum build version of the game. This is **required** to be a number greater than 105.
--   `hidden` is whether or not this mod is essential for multiplayer, false by default. Texture packs, JS plugins, etc. should use this as to not cause conflicts with servers and clients respectively. As a rule of thumb, if your mod creates content it shouldn't be hidden.
+-   `name` 会被用来引用你的mod，所以要小心命名；
+-   `displayName` 这将被用作UI的显示名，您可以使用它来为所述名称添加格式；
+-   `description` 在游戏中mod管理器中会呈现mod的一部分，所以要简洁；
+-   `dependencies` 是可选的，如果您想了解更多信息，请转到 [dependencies](#dependencies) 栏目;
+-   `minGameVersion` 是游戏的最低支持版本。**要求** 比105大（105以下是老版本，很可能出现bug）.
+-   `hidden` 是这个mod对多人游戏是否重要，默认为false。材质包、JS插件等应该启用它，以免分别与服务器和客户机发生冲突。作为一个经验法则，如果你的mod加了实质性内容，它不应该被隐藏。
 
 
 
