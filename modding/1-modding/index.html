@@ -3280,52 +3280,52 @@ hidden: false
 <li><code>hidden</code> 是这个mod对多人游戏是否重要，默认为false。材质包、JS插件等应该启用它，以免分别与服务器和客户机发生冲突。作为一个经验法则，如果你的mod加了实质性内容，它不应该被隐藏。</li>
 </ul>
 <h2 id="content">Content</h2>
-<p>At the root of your project directory you can have a <code>content/</code> directory, this is where all the Json/Hjson data goes. Inside of <code>content/</code> you have subdirectories for the various kinds of content, these are the current common ones:</p>
+<p>在项目目录下可以有一个 <code>content/</code> 的目录, 这是所有Json/Hjson的储存位置。 在 <code>content/</code> 里面， 你可以有各种内容的子目录， 这些是比较常见的：  </p>
 <ul>
-<li><code>content/items/</code> for <a href="#item">items</a>, like <code>copper</code> and <code>surge-alloy</code>;</li>
-<li><code>content/blocks/</code> for <a href="#block">blocks</a>, like turrets and floors;</li>
-<li><code>content/liquids/</code> for <a href="#liquid">liquids</a>, like <code>water</code> and <code>slag</code>;</li>
-<li><code>content/units/</code> for flying or ground <a href="#unittype">units</a>, like <code>eclipse</code> and <code>dagger</code>;</li>
+<li><code>content/items/</code> 是负责 <a href="#item">物品</a>, 像 <code>铜copper</code> 和 <code>巨浪合金surge-alloy</code>（原版物品必须要英文）;</li>
+<li><code>content/blocks/</code> 是负责 <a href="#block">方块</a>, 像加工厂、或者地板;</li>
+<li><code>content/liquids/</code> 是负责 <a href="#liquid">液体</a>, 像 <code>水water</code> 和 <code>矿渣slag</code>;</li>
+<li><code>content/units/</code> 是负责天上飞的或者地上跑的 <a href="#unittype">单位</a>, 像 <code>日蚀eclipse</code> 和 <code>尖刀dagger</code>;</li>
 </ul>
-<p>Note that each one of these subdirectories needs a specific content type. The filenames of these files is important, because the stem name of your path <em>(filename without the extension)</em> is used to reference it.</p>
-<p>Furthermore the files within these <code>content/&lt;content-type&gt;/*</code> directories may be arbitrarly nested into other sub-directories of any name, to help you organize them further, for example:</p>
+<p>请注意，这些子目录中的每一个子目录都需要特定的内容类型，因为路径的根名称 <em>(不带拓展名的文件名)</em> 来引用它。</p>
+<p>此外，这些的 <code>content/&lt;content-type&gt;/*</code> 的目录都可以套在任何其它的子目录, 来让你更方便查看, 比如这样:</p>
 <ul>
-<li><code>content/items/metals/iron.hjson</code>, which would respectively create an item named <code>iron</code>.</li>
+<li><code>content/items/metals/iron.hjson</code>, 创建一个名字为 <code>iron</code> 的文件。</li>
 </ul>
-<p>The content of these files will tend to look something like this:</p>
-<pre><code>type: TypeOfThing
-name: Name Of Thing
-description: Description of thing.
-# ... more fields here ...
+<p>content中的文件形式大多像这个：  </p>
+<pre><code>type: 东西的类型
+name: 东西的名字
+description: 东西的描述
+# ... 更多标签 ...
 </code></pre>
 <table>
 <thead>
 <tr>
-<th>field</th>
-<th>type</th>
-<th>notes</th>
+<th>标签</th>
+<th>类型</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>type</td>
-<td>String</td>
-<td>Content type of this object.</td>
+<td>类型</td>
+<td>字符串</td>
+<td>此对象的内容类型。</td>
 </tr>
 <tr>
-<td>name</td>
-<td>String</td>
-<td>Displayed name of content.</td>
+<td>名字</td>
+<td>字符串</td>
+<td>显示桌面的物品名字。</td>
 </tr>
 <tr>
-<td>description</td>
-<td>String</td>
-<td>Displayed description of content.</td>
+<td>描述</td>
+<td>字符串</td>
+<td>显示桌面的物品描述。</td>
 </tr>
 </tbody>
 </table>
-<p>Other fields included will be the fields of the type itself.</p>
-<p>A side note, <code>name</code> and <code>description</code> are not required to be in the json structure. You can define them for any language with (Bundles)[#bundles]. However, if they are not present in either then the name will be <type>.<modname>-<stemname>.name and an empty description respectively.</p>
+<p>包含的其他字符将是类型本身的字符。</p>
+<p>注： <code>name</code> 和 <code>description</code> 都没必要放在json结构。 你可以使用 (Bundles)[#bundles]来定义。 但是, 如果它们都不在其中，则名称将分别为 <type>.<modname>-<stemname>.name 和一个空描述</p>
 <h2 id="types">Types</h2>
 <p>Types have numerous fields, but the important one is <code>type</code>; this is a special field used by the content parser, that changes which type your object is. <em>A <code>Router</code> type can't be a <code>Turret</code> type</em>, as they're just completely different.</p>
 <p>Types <em>extend</em> each other, so if <code>MissileBulletType</code> extends <code>BasicBulletType</code>, you'll have access to all the fields of <code>BasicBulletType</code> inside of <code>MissileBulletType</code> like <code>damage</code>, <code>lifetime</code> and <code>speed</code>. Fields are case sensitive: <code>hitSize =/= hitsize</code>.</p>
