@@ -107,35 +107,35 @@ Mindustry用 [Hjson](https://hjson.org/), 对于任何了解Json的人来说，�
 
 ## Content
 
-At the root of your project directory you can have a `content/` directory, this is where all the Json/Hjson data goes. Inside of `content/` you have subdirectories for the various kinds of content, these are the current common ones:
+在项目目录下可以有一个 `content/` 的目录, 这是所有Json/Hjson的储存位置。 在 `content/` 里面， 你可以有各种内容的子目录， 这些是比较常见的：  
 
--   `content/items/` for [items](#item), like `copper` and `surge-alloy`;
--   `content/blocks/` for [blocks](#block), like turrets and floors;
--   `content/liquids/` for [liquids](#liquid), like `water` and `slag`;
--   `content/units/` for flying or ground [units](#unittype), like `eclipse` and `dagger`;
+-   `content/items/` 是负责 [物品](#item), 像 `铜copper` 和 `巨浪合金surge-alloy`（原版物品必须要英文）;
+-   `content/blocks/` 是负责 [方块](#block), 像加工厂、或者地板;
+-   `content/liquids/` 是负责 [液体](#liquid), 像 `水water` 和 `矿渣slag`;
+-   `content/units/` 是负责天上飞的或者地上跑的 [单位](#unittype), 像 `日蚀eclipse` 和 `尖刀dagger`;
 
-Note that each one of these subdirectories needs a specific content type. The filenames of these files is important, because the stem name of your path *(filename without the extension)* is used to reference it.
+请注意，这些子目录中的每一个子目录都需要特定的内容类型，因为路径的根名称 *(不带拓展名的文件名)* 来引用它。
 
-Furthermore the files within these `content/<content-type>/*` directories may be arbitrarly nested into other sub-directories of any name, to help you organize them further, for example:
+此外，这些的 `content/<content-type>/*` 的目录都可以套在任何其它的子目录, 来让你更方便查看, 比如这样:
 
--   `content/items/metals/iron.hjson`, which would respectively create an item named `iron`.
+-   `content/items/metals/iron.hjson`, 创建一个名字为 `iron` 的文件。
 
-The content of these files will tend to look something like this:
+content中的文件形式大多像这个：  
 
-    type: TypeOfThing
-    name: Name Of Thing
-    description: Description of thing.
-    # ... more fields here ...
+    type: 东西的类型
+    name: 东西的名字
+    description: 东西的描述
+    # ... 更多标签 ...
 
-|field|type|notes|
+|标签|类型|说明|
 |---|---|---|
-|type|String|Content type of this object.|
-|name|String|Displayed name of content.|
-|description|String|Displayed description of content.|
+|类型|字符串|此对象的内容类型。|
+|名字|字符串|显示桌面的物品名字。|
+|描述|字符串|显示桌面的物品描述。|
 
-Other fields included will be the fields of the type itself.
+包含的其他字符将是类型本身的字符。
 
-A side note, `name` and `description` are not required to be in the json structure. You can define them for any language with (Bundles)[#bundles]. However, if they are not present in either then the name will be <type>.<modname>-<stemname>.name and an empty description respectively.
+注： `name` 和 `description` 都没必要放在json结构。 你可以使用 (Bundles)[#bundles]来定义。 但是, 如果它们都不在其中，则名称将分别为 <type>.<modname>-<stemname>.name 和一个空描述
 
 
 
