@@ -141,15 +141,14 @@ content中的文件形式大多像这个：
 
 ## Types
 
-Types have numerous fields, but the important one is `type`; this is a special field used by the content parser, that changes which type your object is. *A `Router` type can't be a `Turret` type*, as they're just completely different.
+Types有许多字段类型, 但是最重要的那个就是 `type`; 这是content里的一个特殊字段， 来更改项目的类型。 *一个 `Router` 的类型不能改成 `Turret` 类型*, 因为他们八竿子都打不到一块，完全不同。
+Types彼此 *延展* , 所以如果 `MissileBulletType` 延展了 `BasicBulletType`, 你可以调用 `BasicBulletType` 中的 `MissileBulletType` 像 `damage`, `lifetime` 和 `speed`. 要区分大小写： `hitSize =/= hitsize`.
 
-Types *extend* each other, so if `MissileBulletType` extends `BasicBulletType`, you'll have access to all the fields of `BasicBulletType` inside of `MissileBulletType` like `damage`, `lifetime` and `speed`. Fields are case sensitive: `hitSize =/= hitsize`.
+你可以延展一个你想要的类型, 有些字段什么都不会做出任何操作，主要就是负责基本拓展，就像`Block`.  
 
-What you can expect a field to do is up to the specific type, some types do absolutely nothing with their fields, and work mostly as a base types will extend from. One such type is `Block`.
+在单位的例子中 单位的类型是 `flying`. `bullet` 的类型是 `BulletType`, 所以你可以使用 `MissileBulletType`, 因为 `MissileBulletType` 拓展了 `BulletType`.
 
-In this unit example, the type of the unit is `flying`. The type of the `bullet` is `BulletType`, so you can use `MissileBulletType`, because `MissileBulletType` extends `BulletType`.
-
-One could also use `mech`, `legs`, `naval` or `payload` as the unit type here.
+还可以使用 `mech`, `legs`, `naval` 或者 `payload` 来作为单位类型
 
 ```hjson
 type: flying
@@ -163,12 +162,12 @@ weapons: [
 ]
 ```
 
-As of build `125.1`, types can also be the *fully-qualified class name* of a Java class. 
+在build `125.1`时, types也可以是Java类别的 *完全限定名* 
 
-For example, to specify a block as a `MendProjector`, you may write
-`type: mindustry.world.blocks.defense.MendProjector` instead of `type: MendProjector`.
+例如，要将块指定为 `MendProjector`, 可以写
+`type: mindustry.world.blocks.defense.MendProjector` 而不是 `type: MendProjector`.
 
-While not particularly useful for vanilla types, this can be used to load block types *from other Java mods* as dependencies.
+虽然对于普通类型不是特别有用，也可以加载其它方块 *来自别的 Java mods* 作为依赖项
 
 ## Tech Tree
 
