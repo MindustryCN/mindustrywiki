@@ -3327,11 +3327,11 @@ description: 东西的描述
 <p>包含的其他字符将是类型本身的字符。</p>
 <p>注： <code>name</code> 和 <code>description</code> 都没必要放在json结构。 你可以使用 (Bundles)[#bundles]来定义。 但是, 如果它们都不在其中，则名称将分别为 <type>.<modname>-<stemname>.name 和一个空描述</p>
 <h2 id="types">Types</h2>
-<p>Types have numerous fields, but the important one is <code>type</code>; this is a special field used by the content parser, that changes which type your object is. <em>A <code>Router</code> type can't be a <code>Turret</code> type</em>, as they're just completely different.</p>
-<p>Types <em>extend</em> each other, so if <code>MissileBulletType</code> extends <code>BasicBulletType</code>, you'll have access to all the fields of <code>BasicBulletType</code> inside of <code>MissileBulletType</code> like <code>damage</code>, <code>lifetime</code> and <code>speed</code>. Fields are case sensitive: <code>hitSize =/= hitsize</code>.</p>
-<p>What you can expect a field to do is up to the specific type, some types do absolutely nothing with their fields, and work mostly as a base types will extend from. One such type is <code>Block</code>.</p>
-<p>In this unit example, the type of the unit is <code>flying</code>. The type of the <code>bullet</code> is <code>BulletType</code>, so you can use <code>MissileBulletType</code>, because <code>MissileBulletType</code> extends <code>BulletType</code>.</p>
-<p>One could also use <code>mech</code>, <code>legs</code>, <code>naval</code> or <code>payload</code> as the unit type here.</p>
+<p>Types有许多字段类型, 但是最重要的那个就是 <code>type</code>; 这是content里的一个特殊字段， 来更改项目的类型。 <em>一个 <code>Router</code> 的类型不能改成 <code>Turret</code> 类型</em>, 因为他们八竿子都打不到一块，完全不同。
+Types彼此 <em>延展</em> , 所以如果 <code>MissileBulletType</code> 延展了 <code>BasicBulletType</code>, 你可以调用 <code>BasicBulletType</code> 中的 <code>MissileBulletType</code> 像 <code>damage</code>, <code>lifetime</code> 和 <code>speed</code>. 要区分大小写： <code>hitSize =/= hitsize</code>.</p>
+<p>你可以延展一个你想要的类型, 有些字段什么都不会做出任何操作，主要就是负责基本拓展，就像<code>Block</code>.  </p>
+<p>在单位的例子中 单位的类型是 <code>flying</code>. <code>bullet</code> 的类型是 <code>BulletType</code>, 所以你可以使用 <code>MissileBulletType</code>, 因为 <code>MissileBulletType</code> 拓展了 <code>BulletType</code>.</p>
+<p>还可以使用 <code>mech</code>, <code>legs</code>, <code>naval</code> 或者 <code>payload</code> 来作为单位类型</p>
 <pre><code class="language-hjson">type: flying
 weapons: [
   {
@@ -3342,10 +3342,10 @@ weapons: [
   }
 ]
 </code></pre>
-<p>As of build <code>125.1</code>, types can also be the <em>fully-qualified class name</em> of a Java class. </p>
-<p>For example, to specify a block as a <code>MendProjector</code>, you may write
-<code>type: mindustry.world.blocks.defense.MendProjector</code> instead of <code>type: MendProjector</code>.</p>
-<p>While not particularly useful for vanilla types, this can be used to load block types <em>from other Java mods</em> as dependencies.</p>
+<p>在build <code>125.1</code>时, types也可以是Java类别的 <em>完全限定名</em> </p>
+<p>例如，要将块指定为 <code>MendProjector</code>, 可以写
+<code>type: mindustry.world.blocks.defense.MendProjector</code> 而不是 <code>type: MendProjector</code>.</p>
+<p>虽然对于普通类型不是特别有用，也可以加载其它方块 <em>来自别的 Java mods</em> 作为依赖项</p>
 <h2 id="tech-tree">Tech Tree</h2>
 <p>Much like <code>type</code> there exist another magical field known as <code>research</code> which can go at the root of any block object to put it in the techtree.</p>
 <pre><code>research: duo
