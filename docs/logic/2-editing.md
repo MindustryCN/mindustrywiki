@@ -13,7 +13,7 @@
 * 更直观的使用Jump
 * 手机也可以用
 
-<img src="/wiki/images/misc/logic-editing-visualEditor-overview.png">
+<img src="https://wiki.mindustry.cyou/wiki/images/misc/logic-editing-visualEditor-overview.png">
 
 也可以从粘贴板中导出导入代码。
 
